@@ -10,8 +10,17 @@
       <mat-icon>home</mat-icon>
     </button>
     <div class="espacio"></div>
-    <button mat-button routerLink="login">Login</button>
-    <button mat-button routerLink="registro">Registro</button>
+    <button mat-button routerLink="login">
+      <span class="material-icons">
+        login
+      </span>Login</button>
+    <button mat-button routerLink="registro">
+      <span class="material-icons">
+        app_registration
+      </span>Registro</button>
+    <span class="material-icons">
+      account_circle
+    </span>
   </mat-toolbar>
 
   <mat-sidenav-container class="example-sidenav-container" [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
@@ -29,4 +38,6 @@
       </div>
     </mat-sidenav-content>
   </mat-sidenav-container>
+
+  <app-footer></app-footer>
 </div>

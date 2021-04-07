@@ -1,7 +1,12 @@
 $font-stack: 'Helvetica', sans-serif
-$primary-color: #ffffff
-$secondary-color: #000000
-$example-color: pink
+$primary-color: #7b1fa2
+$secondary-color: #0e5a12
+$border-color: #000000
+$shadow-color: #000000
+$border-radius: 20px
+$border-radius-alt: 50px
+
+$view-screen: 100vh
 
 html, body
     height: 100%
@@ -13,16 +18,28 @@ body
     margin: 0
 
 .mat-sidenav
-    background: rgba(255, 0, 0, 0.5)
+    background: $primary-color
 
 .mat-drawer-container
     display: flex
 
 .example-container
-    height: 500px
-    width: 100%
+    height: $view-screen
 
 .mat-sidenav-container
-    height: 100%
+    height: $view-screen
+
+.floating-form
+    width: 70vh
+    height: 70vh
+    background-color: $secondary-color
+    border: 0px solid $border-color
+    border-radius: $border-radius-alt $border-radius
+    box-shadow: 2px 2px 6px $shadow-color
+    margin: 0 auto
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
 
 @import "~@angular/material/prebuilt-themes/purple-green.css"
