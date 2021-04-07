@@ -1,1 +1,28 @@
-  background-repeat: repeat-x;
+$font-stack: 'Helvetica', sans-serif
+$primary-color: #ffffff
+$secondary-color: #000000
+$example-color: pink
+
+html, body
+    height: 100%
+
+body
+    box-sizing: border-box
+    font: $font-stack
+    color: $primary-color
+    margin: 0
+
+.mat-sidenav
+    background: rgba(255, 0, 0, 0.5)
+
+.mat-drawer-container
+    display: flex
+
+.example-container
+    height: 500px
+    width: 100%
+
+.mat-sidenav-container
+    height: 100%
+
+@import "~@angular/material/prebuilt-themes/purple-green.css"
